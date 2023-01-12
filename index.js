@@ -115,7 +115,4 @@ const buttom = document.getElementById('draw');
 
 buttom.addEventListener('click', function() {
     deck.draw();
-    if (buttom.innerHTML == 'Embaralhr');
-        console.log('ue');
-        deck.resetDeck();
 })
