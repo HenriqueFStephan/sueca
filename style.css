@@ -30,6 +30,7 @@ time, mark, audio, video {
 header {
     align-items: center;
     display: flex;
+    font-size: 10vh;
     height: 20vh;
     justify-content: center;
 }
@@ -42,16 +43,20 @@ main {
     text-transform: uppercase;
 }
 
+/*
 #cardSlot {
     
 }
+*/
 
 main h3 {
     margin: 6vh 4vh;
+    font-size: 4vh;
 }
 
 main h4 {
     margin: 6vh 4vh;
+    font-size: 4vh;
 }
 
 
@@ -61,4 +66,10 @@ footer {
     display: flex;
     height: 20vh;
     justify-content: center;
-}   
+}
+
+footer button {
+    border-radius: 8px;
+    height: 8vh;
+    width: 8vh;    
+}
