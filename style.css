@@ -27,10 +27,17 @@ time, mark, audio, video {
 
 /*  CSSZIN  */
 
+body {
+    background-color: #5992edcb;
+    height: 100vh;
+}
+
 header {
     align-items: center;
+    color: #c9f455c0;
     display: flex;
     font-size: 10vh;
+    font-weight: 600;
     height: 20vh;
     justify-content: center;
 }
@@ -38,38 +45,52 @@ header {
 main {
     align-items: center;
     display: flex;
+    font-weight: 600;
     height: 60vh;
     justify-content: center;
     text-transform: uppercase;
 }
 
-/*
+
 #cardSlot {
-    
+    background-color: #f6f6f6;
+    background-image: url(./assets/cardbg2.jpg);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: contain;
+    border: 4px solid #000000;
+    border-radius: 12px;
+    display: flex;
+    height: 55vh;
+    width: 35vh;
 }
-*/
+
 
 main h3 {
-    margin: 6vh 4vh;
-    font-size: 4vh;
+    font-size: 5vh;
+    margin-left: 1.5vh;
+    margin-top: 1vh;
 }
 
 main h4 {
-    margin: 6vh 4vh;
     font-size: 4vh;
+    margin-left: 1vh;
 }
 
-
-
 footer {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     height: 20vh;
     justify-content: center;
 }
 
 footer button {
+    background-color: transparent;
+    border: none;
     border-radius: 8px;
-    height: 8vh;
-    width: 8vh;    
+    color: #000000;
+    cursor: pointer;  
+    font-size: 4vh;
+    font-weight: 600;
+    margin-top: 2vh;
 }
