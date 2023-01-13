@@ -19,6 +19,7 @@ class Deck {
     }
 
     draw() {
+        buttom.innerHTML = 'draw'
         if (this.deck.length >= 1) {
             let card = new Card;
             let prosseguir = false;
@@ -29,7 +30,6 @@ class Deck {
                         prosseguir = true
                         {break}
                     }else if (this.deck[i] == 'joker') {
-                        console.log('oi');
                         prosseguir = true
                         {break}
                     }
@@ -61,8 +61,7 @@ class Deck {
             cardSlot.appendChild(newCard);
             newCard.innerHTML = 'Acabou o Baralho, Reembaralhe';
             const buttom = document.getElementById('draw');
-            buttom.innerHTML = 'Embaralhar';
-            
+            buttom.innerHTML = 'Shuffle';
             };
         };
 }
@@ -115,4 +114,7 @@ const buttom = document.getElementById('draw');
 
 buttom.addEventListener('click', function() {
     deck.draw();
+    if (buttom.innerHTML == 'Shuffle') {
+        deck.resetDeck();
+    }
 })
