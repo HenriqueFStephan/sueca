@@ -10,8 +10,10 @@ body {
                         "g j h";
     height: 88vh;
     width: 63vh;
-    border: solid 1vh;
+    border: double 10px #cbc48c;
     font-size: 90px;
+    border-radius: 10px;
+    background-color: #fbf6cc;
 }
 
 #templateA5329 {
@@ -30,10 +32,10 @@ body {
                         "g j h";
     height: 88vh;
     width: 63vh;
-    border: solid 1vh;
+    border: double 10px #cbc48c;
     font-size: 90px;
-
-
+    border-radius: 10px;
+    background-color: #fbf6cc;
 }
 
 #template4678 {
@@ -52,8 +54,10 @@ body {
                         "e j f";
     height: 88vh;
     width: 63vh;
-    border: solid 1vh;
+    border: double 10px #cbc48c;
     font-size: 90px;
+    border-radius: 10px;
+    background-color: #fbf6cc;
 }
 
 .a {
