@@ -34,7 +34,16 @@ function innerTemplate(value, nipe, local) {
         case '10':
             body.innerHTML = `<div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div></div>`
             break;
+        case 'j':
+            body.innerHTML = `<div id="templateJ" class="template"></div>`
+            break;
+        case 'q':
+            body.innerHTML = `<div id="templateQ" class="template"></div>`
+            break;
+        case 'k':
+            body.innerHTML = `<div id="templateK" class="template"></div>`
+            break;
         }
 }
 
-innerTemplate('10', '&#9830', 'body')
+innerTemplate('k', '&#9830', 'body')

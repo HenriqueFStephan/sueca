@@ -60,6 +60,45 @@ body {
     background-color: #fbf6cc;
 }
 
+#templateJ {
+    height: 56vh;
+    width: 35vh;
+    border: double 10px #cbc48c;
+    font-size: 90px;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./Jack.jpg);
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+#templateQ {
+    height: 56vh;
+    width: 35vh;
+    border: double 10px #cbc48c;
+    font-size: 90px;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./Queen.jpg);
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+#templateK {
+    height: 56vh;
+    width: 35vh;
+    border: double 10px #cbc48c;
+    font-size: 90px;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./King.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .a {
     grid-area: a;
     display: flex;
