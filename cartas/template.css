@@ -1,0 +1,150 @@
+body {
+    display: flex;
+}
+
+#template105 {
+    display: grid;
+    grid-template-areas:"a i b"
+                        "c i d"
+                        "e j f"
+                        "g j h";
+    height: 88vh;
+    width: 63vh;
+    border: solid 1vh;
+    font-size: 90px;
+}
+
+#templateA5329 {
+    display: grid;
+    grid-template-areas:"a i b"
+                        "a i b"
+                        "a i b"
+                        "c i d"
+                        "c k d"
+                        "c k d"
+                        "e k f"
+                        "e k f"
+                        "e j f"
+                        "g j h"
+                        "g j h"
+                        "g j h";
+    height: 88vh;
+    width: 63vh;
+    border: solid 1vh;
+    font-size: 90px;
+
+
+}
+
+#template4678 {
+    display: grid;
+    grid-template-areas:"a i b"
+                        "a i b"
+                        "a i b"
+                        "a k b"
+                        "c k d"
+                        "c k d"
+                        "c l d"
+                        "c l d"
+                        "e l f"
+                        "e j f"
+                        "e j f"
+                        "e j f";
+    height: 88vh;
+    width: 63vh;
+    border: solid 1vh;
+    font-size: 90px;
+}
+
+.a {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.b {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.c {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d {
+    grid-area: d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e {
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.f {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.g {
+    grid-area: g;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.h {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.i {
+    grid-area: i;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.j {
+    grid-area: j;
+    display: flex;
+    align-items: center;
+    rotate: 180deg;
+    justify-content: center;
+}
+
+.k {
+    grid-area: k;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l {
+    grid-area: l;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
