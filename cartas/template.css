@@ -9,7 +9,7 @@ body {
                         "e j f"
                         "g j h";
     height: 88vh;
-    width: 63vh;
+    width: 55vh;
     border: double 10px #cbc48c;
     font-size: 90px;
     border-radius: 10px;
@@ -31,7 +31,7 @@ body {
                         "g j h"
                         "g j h";
     height: 88vh;
-    width: 63vh;
+    width: 55vh;
     border: double 10px #cbc48c;
     font-size: 90px;
     border-radius: 10px;
@@ -53,7 +53,7 @@ body {
                         "e j f"
                         "e j f";
     height: 88vh;
-    width: 63vh;
+    width: 55vh;
     border: double 10px #cbc48c;
     font-size: 90px;
     border-radius: 10px;
@@ -61,8 +61,8 @@ body {
 }
 
 #templateJ {
-    height: 56vh;
-    width: 35vh;
+    height: 88vh;
+    width: 55vh;
     border: double 10px #cbc48c;
     font-size: 90px;
     border-radius: 10px;
@@ -74,8 +74,8 @@ body {
 }
 
 #templateQ {
-    height: 56vh;
-    width: 35vh;
+    height: 88vh;
+    width: 55vh;
     border: double 10px #cbc48c;
     font-size: 90px;
     border-radius: 10px;
@@ -84,18 +84,19 @@ body {
     background-position: center;
     background-size: 95%;
     background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
 }
 
 #templateK {
-    height: 56vh;
-    width: 35vh;
+    height: 88vh;
+    width: 55vh;
     border: double 10px #cbc48c;
     font-size: 90px;
     border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./King.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: 98%;
     background-repeat: no-repeat;
 }
 

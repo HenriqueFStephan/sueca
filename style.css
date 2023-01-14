@@ -54,7 +54,7 @@ main {
 
 #cardSlot {
     background-color: #f6f6f6;
-    background-image: url(./assets/cardbg2.jpg);
+    /*background-image: url(./assets/cardbg2.jpg);*/
     background-repeat: no-repeat;
     background-position: 10%;
     background-size: contain;
@@ -93,4 +93,189 @@ footer button {
     font-size: 4vh;
     font-weight: 600;
     margin-top: 2vh;
+}
+
+
+#template105 {
+    display: grid;
+    grid-template-areas:"a i b"
+                        "c i d"
+                        "e j f"
+                        "g j h";
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+}
+
+#templateA5329 {
+    display: grid;
+    grid-template-areas:"a i b"
+                        "a i b"
+                        "a i b"
+                        "c i d"
+                        "c k d"
+                        "c k d"
+                        "e k f"
+                        "e k f"
+                        "e j f"
+                        "g j h"
+                        "g j h"
+                        "g j h";
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+}
+
+#template4678 {
+    display: grid;
+    grid-template-areas:"a i b"
+                        "a i b"
+                        "a i b"
+                        "a k b"
+                        "c k d"
+                        "c k d"
+                        "c l d"
+                        "c l d"
+                        "e l f"
+                        "e j f"
+                        "e j f"
+                        "e j f";
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+}
+
+#templateJ {
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./cartas/Jack.jpg);
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+#templateQ {
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./cartas/Queen.jpg);
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+}
+
+#templateK {
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./cartas/King.jpg);
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.a {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.b {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.c {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d {
+    grid-area: d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e {
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.f {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.g {
+    grid-area: g;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.h {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
+}
+
+.i {
+    grid-area: i;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.j {
+    grid-area: j;
+    display: flex;
+    align-items: center;
+    rotate: 180deg;
+    justify-content: center;
+}
+
+.k {
+    grid-area: k;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l {
+    grid-area: l;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 180deg;
 }
