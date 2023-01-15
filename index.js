@@ -54,7 +54,7 @@ class Deck {
                 return [card.valor, card.nipe];
             }
         }else {
-            const cardSlot = document.getElementById('cardSlot');
+            let cardSlot = document.getElementById('main');
             cardSlot.innerHTML = ''
             let newCard = document.createElement('div');
             cardSlot.appendChild(newCard);
@@ -88,12 +88,11 @@ class Card {
     }
 
     displayCard(value, nipe) {
-        const cardSlot = document.getElementById('cardSlot');
-        this.innerTemplate(value, nipe, 'cardSlot')
+        this.innerTemplate(value, nipe, 'main')
         }
         
     innerTemplate(value, nipe, local) {
-        const body = document.getElementById(`${local}`);
+        let body = document.getElementById(`${local}`);
         switch (value) {
             case 'a':
                 body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
@@ -135,7 +134,7 @@ class Card {
                 body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateK" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case 'joker':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateJoker" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p></div><div id="templateJoker" class="template"></div><div id="outerLetterEnd"><p>${value}</p></div></div>`
                 break;
         }
     }
