@@ -46,5 +46,5 @@ function innerTemplate(value, nipe, local) {
         }
 }
 
-innerTemplate('10', '&#9830', 'body')
+//innerTemplate('10', '&#9830', 'body')
 

@@ -51,7 +51,6 @@ class Deck {
                         }
                     }
                 }
-                console.log(this.deck.length); 
                 return [card.valor, card.nipe];
             }
         }else {
@@ -89,17 +88,10 @@ class Card {
     }
 
     displayCard(value, nipe) {
-        /*const cardSlot = document.getElementById('cardSlot');
-        cardSlot.innerHTML = ''*/
-        let newCard = document.createElement('div');
-        cardSlot.appendChild(newCard);
-        if (value == 'joker') {
-            newCard.innerHTML = `<h3>${value}</h3>`
-        }else {
-            this.innerTemplate(value, nipe, 'cardSlot')
-            console.log(value);
+        const cardSlot = document.getElementById('cardSlot');
+        this.innerTemplate(value, nipe, 'cardSlot')
         }
-    }
+    
     innerTemplate(value, nipe, local) {
         const body = document.getElementById(`${local}`);
         switch (value) {
@@ -141,6 +133,9 @@ class Card {
                 break;
             case 'k':
                 body.innerHTML = `<div id="templateK" class="template"></div>`
+                break;
+            case 'joker':
+                body.innerHTML = `<div id="templateJoker" class="template"></div>`
                 break;
             }
     }
