@@ -8,12 +8,13 @@ body {
                         "c i d"
                         "e j f"
                         "g j h";
-    height: 88vh;
-    width: 55vh;
+    height: 56vh;
+    width: 35vh;
     border: double 10px #cbc48c;
-    font-size: 90px;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
+    margin-top: 15vh;
 }
 
 #templateA5329 {
@@ -30,12 +31,13 @@ body {
                         "g j h"
                         "g j h"
                         "g j h";
-    height: 88vh;
-    width: 55vh;
+    height: 56vh;
+    width: 35vh;
     border: double 10px #cbc48c;
-    font-size: 90px;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
+    margin-top: 15vh;
 }
 
 #template4678 {
@@ -52,32 +54,35 @@ body {
                         "e j f"
                         "e j f"
                         "e j f";
-    height: 88vh;
-    width: 55vh;
+    height: 56vh;
+    width: 35vh;    
     border: double 10px #cbc48c;
-    font-size: 90px;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
+    margin-top: 15vh;
+
 }
 
 #templateJ {
     height: 88vh;
     width: 55vh;
     border: double 10px #cbc48c;
-    font-size: 90px;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./Jack.jpg);
     background-position: center;
     background-size: 95%;
     background-repeat: no-repeat;
+    margin-top: 15vh;
 }
 
 #templateQ {
     height: 88vh;
     width: 55vh;
     border: double 10px #cbc48c;
-    font-size: 90px;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./Queen.jpg);
@@ -85,19 +90,34 @@ body {
     background-size: 95%;
     background-repeat: no-repeat;
     background-blend-mode: color-dodge;
+    margin-top: 15vh;
 }
 
 #templateK {
     height: 88vh;
     width: 55vh;
     border: double 10px #cbc48c;
-    font-size: 90px;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./King.jpg);
     background-position: center;
     background-size: 98%;
     background-repeat: no-repeat;
+    margin-top: 15vh;
+}
+
+#templateJoker {
+    width: 55vh;
+    font-size: 45px;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    background-color: #fbf6cc;
+    background-image: url(./cartas/joker.jpg);
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+    margin-top: 15vh;
 }
 
 .a {
@@ -192,3 +212,37 @@ body {
     rotate: 180deg;
 }
 
+#outerTemplate{
+    height: 89vh;
+    width: 57vh;
+    display: flex;
+    border: solid #000 5px;
+    border-radius: 20px;
+    font-size: 45px;
+}
+
+#outerLetter {
+    margin: 0;
+    display: inline;
+    width: 9vh;
+    font-size: 60px;
+}
+
+#nipe {
+    margin: 0;
+    display: inline;
+    font-size: 70px;
+    margin-top: 0px;
+}
+
+p {
+    margin: 0;
+}
+
+#outerLetterEnd {
+    margin: 0;
+    display: inline;
+    width: 9vh;
+    font-size: 60px;
+    rotate: 180deg;
+}

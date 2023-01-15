@@ -96,17 +96,24 @@ footer button {
 }
 
 
+
+
+
+
+
 #template105 {
     display: grid;
     grid-template-areas:"a i b"
                         "c i d"
                         "e j f"
                         "g j h";
-    width: 55vh;
-    font-size: 45px;
+    height: 56vh;
+    width: 35vh;
     border: double 10px #cbc48c;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
+    margin-top: 15vh;
 }
 
 #templateA5329 {
@@ -123,11 +130,13 @@ footer button {
                         "g j h"
                         "g j h"
                         "g j h";
-    width: 55vh;
-    font-size: 45px;
+    height: 56vh;
+    width: 35vh;
     border: double 10px #cbc48c;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
+    margin-top: 15vh;
 }
 
 #template4678 {
@@ -144,47 +153,57 @@ footer button {
                         "e j f"
                         "e j f"
                         "e j f";
-    width: 55vh;
-    font-size: 45px;
+    height: 56vh;
+    width: 35vh;    
     border: double 10px #cbc48c;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
+    margin-top: 15vh;
+
 }
 
 #templateJ {
+    height: 88vh;
     width: 55vh;
-    font-size: 45px;
     border: double 10px #cbc48c;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
-    background-image: url(./cartas/Jack.jpg);
+    background-image: url(./Jack.jpg);
     background-position: center;
     background-size: 95%;
     background-repeat: no-repeat;
+    margin-top: 15vh;
 }
 
 #templateQ {
+    height: 88vh;
     width: 55vh;
-    font-size: 45px;
     border: double 10px #cbc48c;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
-    background-image: url(./cartas/Queen.jpg);
+    background-image: url(./Queen.jpg);
     background-position: center;
     background-size: 95%;
     background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+    margin-top: 15vh;
 }
 
 #templateK {
+    height: 88vh;
     width: 55vh;
-    font-size: 45px;
     border: double 10px #cbc48c;
+    font-size: 70px;
     border-radius: 10px;
     background-color: #fbf6cc;
-    background-image: url(./cartas/King.jpg);
+    background-image: url(./King.jpg);
     background-position: center;
     background-size: 98%;
     background-repeat: no-repeat;
+    margin-top: 15vh;
 }
 
 #templateJoker {
@@ -197,6 +216,7 @@ footer button {
     background-position: center;
     background-size: 98%;
     background-repeat: no-repeat;
+    margin-top: 15vh;
 }
 
 .a {
@@ -288,5 +308,40 @@ footer button {
     display: flex;
     justify-content: center;
     align-items: center;
+    rotate: 180deg;
+}
+
+#outerTemplate{
+    height: 89vh;
+    width: 57vh;
+    display: flex;
+    border: solid #000 5px;
+    border-radius: 20px;
+    font-size: 45px;
+}
+
+#outerLetter {
+    margin: 0;
+    display: inline;
+    width: 9vh;
+    font-size: 60px;
+}
+
+#nipe {
+    margin: 0;
+    display: inline;
+    font-size: 70px;
+    margin-top: 0px;
+}
+
+p {
+    margin: 0;
+}
+
+#outerLetterEnd {
+    margin: 0;
+    display: inline;
+    width: 9vh;
+    font-size: 60px;
     rotate: 180deg;
 }
