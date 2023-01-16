@@ -28,53 +28,34 @@ time, mark, audio, video {
 /*  CSSZIN  */
 
 body {
-    background-color: #5992edcb;
+    background-color: #91dfe8a7;
+    background-image: url(./assets/mac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
 header {
     align-items: center;
-    color: #c9f455c0;
+    color: #f1e3be;
     display: flex;
-    font-size: 10vh;
-    font-weight: 600;
+    font-size: 9vh;
     height: 20vh;
     justify-content: center;
+}
+
+header h1 {
+    background: #2c1010d7;
+    border-radius: 8px;
+    padding: 0 2vh 0 2vh;
 }
 
 main {
     align-items: center;
     display: flex;
-    font-weight: 600;
     height: 60vh;
     justify-content: center;
     text-transform: uppercase;
-}
-
-
-#cardSlot {
-    background-color: #f6f6f6;
-    /*background-image: url(./assets/cardbg2.jpg);*/
-    background-repeat: no-repeat;
-    background-position: 10%;
-    background-size: contain;
-    border: 4px solid #000000;
-    border-radius: 12px;
-    display: flex;
-    height: 55vh;
-    width: 35vh;
-}
-
-
-main h3 {
-    font-size: 5vh;
-    margin-left: 1.5vh;
-    margin-top: 1vh;
-}
-
-main h4 {
-    font-size: 4vh;
-    margin-left: 1vh;
 }
 
 footer {
@@ -84,41 +65,41 @@ footer {
     justify-content: center;
 }
 
-footer button {
-    background-color: transparent;
+footer button {    
+    background: #2c1010d7;
     border: none;
     border-radius: 8px;
-    color: #000000;
+    color: #f1e3be;
     cursor: pointer;  
-    font-size: 4vh;
+    font-size: 5vh;
     font-weight: 600;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    padding: 0.5vh 1vh 0.5vh 1vh
 }
 
-
-
-
-
-
+/*  CARDS  */
 
 #template105 {
-    display: grid;
+    background-color: #fbf6cc;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    display: grid;                       
+    font-size: 50px;
     grid-template-areas:"a i b"
                         "c i d"
                         "e j f"
                         "g j h";
     height: 40vh;
-    width: 25vh;
     margin-top: 10.7vh;
-    font-size: 50px;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    background-color: #fbf6cc;
-
+    width: 25vh;
 }
 
 #templateA5329 {
+    background-color: #fbf6cc;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
     display: grid;
+    font-size: 50px;
     grid-template-areas:"a i b"
                         "a i b"
                         "a i b"
@@ -132,17 +113,16 @@ footer button {
                         "g j h"
                         "g j h";
     height: 40vh;
-    width: 25vh;
     margin-top: 10.7vh;
-    font-size: 50px;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    background-color: #fbf6cc;
-
+    width: 25vh;
 }
 
 #template4678 {
+    background-color: #fbf6cc;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
     display: grid;
+    font-size: 50px;
     grid-template-areas:"a i b"
                         "a i b"
                         "a i b"
@@ -156,196 +136,208 @@ footer button {
                         "e j f"
                         "e j f";
     height: 40vh;
-    width: 25vh;
     margin-top: 10.7vh;
-    font-size: 50px;  
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    background-color: #fbf6cc;
+    width: 25vh;
 }
 
 #templateJ {
-
-    border: double 10px #cbc48c;
-    height: 40vh;
-    width: 25vh;
-    margin-top: 10.7vh;
-    font-size: 50px;
-    border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./cartas/Jack.jpg);
     background-position: center;
     background-size: 105%;
     background-repeat: no-repeat;
-    
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    font-size: 50px;
+    height: 40vh;
+    margin-top: 10.7vh;
+    width: 25vh;    
 }
 
 #templateQ {
-    height: 40vh;
-    width: 25vh;
-    margin-top: 10.7vh;
-    font-size: 50px;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./cartas/Queen.jpg);
     background-position: center;
     background-size: 110%;
     background-repeat: no-repeat;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    font-size: 50px;
+    height: 40vh;
+    margin-top: 10.7vh;
+    width: 25vh;
 }
 
 #templateK {
-    height: 40vh;
-    width: 25vh;
-    margin-top: 10.7vh;
-    font-size: 50px;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./cartas/King.jpg);
     background-position: center;
     background-size: 108%;
     background-repeat: no-repeat;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    font-size: 50px;
+    height: 40vh;
+    margin-top: 10.7vh;
+    width: 25vh;
 }
 
 #templateJoker {
-    height: 40vh;
-    width: 25vh;
-    margin-top: 10.7vh;
-    font-size: 50px;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
     background-color: #fbf6cc;
     background-image: url(./cartas/joker.jpg);
     background-position: center;
     background-size: 98%;
     background-repeat: no-repeat;
+    border: double 10px #cbc48c;
+    border-radius: 10px;
+    font-size: 50px;
+    height: 40vh;
+    margin-top: 10.7vh;
+    width: 25vh;
 }
 
 .a {
-    grid-area: a;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    
+    display: flex;
+    grid-area: a;
+    justify-content: center;    
 }
 
 .b {
-    grid-area: b;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    
+    display: flex;
+    grid-area: b;
+    justify-content: center;    
 }
 
 .c {
-    grid-area: c;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: c;
+    justify-content: center;
 }
 
 .d {
-    grid-area: d;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: d;
+    justify-content: center;
 }
 
 .e {
-    grid-area: e;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: e;
+    justify-content: center;
     rotate: 180deg;
 }
 
 .f {
-    grid-area: f;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: f;
+    justify-content: center;
     rotate: 180deg;
 }
 
 .g {
-    grid-area: g;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: g;
+    justify-content: center;
     rotate: 180deg;
 }
 
 .h {
-    grid-area: h;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: h;
+    justify-content: center;
     rotate: 180deg;
 }
 
 .i {
-    grid-area: i;
-    display: flex;
     align-items: center;
+    display: flex;
+    grid-area: i;
     justify-content: center;
 }
 
 .j {
-    grid-area: j;
-    display: flex;
     align-items: center;
-    rotate: 180deg;
+    display: flex;
+    grid-area: j;
     justify-content: center;
+    rotate: 180deg;
 }
 
 .k {
-    grid-area: k;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: k;
+    justify-content: center;
 }
 
 .l {
-    grid-area: l;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    grid-area: l;
+    justify-content: center;
     rotate: 180deg;
 }
 
-#outerTemplate{
-    height: 64vh;
-    width: 41vh;
-    display: flex;
+#outerTemplate {
+    background-color: #f1efe3;
     border: solid #000 5px;
     border-radius: 20px;
+    display: flex;
     font-size: 45px;
-    background-color: #f6f6f6;
+    height: 64vh;
+    width: 41vh;
 }
 
 #outerLetter {
-    margin: 0;
     display: inline;
+    font-size: 6vh;
+    font-weight: 400;
+    margin-left: 2vh;
+    margin-top: 1vh;
     width: 9vh;
-    font-size: 45px;
 }
 
 #nipe {
-    margin: 0;
     display: inline;
-    font-size: 50px;
-    margin-top: 0px;
-}
-
-p {
-    margin: 0;
+    font-size: 6vh;
 }
 
 #outerLetterEnd {
-    margin: 0;
     display: inline;
-    width: 9vh;
-    font-size: 60px;
+    font-size: 6vh;
+    font-weight: 400;
+    margin-right: 2vh;
+    margin-bottom: 1vh;
     rotate: 180deg;
+    width: 9vh;
+}
+
+/*  MEDIA KIT  */
+
+@media only screen and (max-width:500px) {
+    #outerLetter {
+        font-size: 8vh;
+        margin: 0 0 0 1vh;
+    }
+    
+    #outerLetterEnd {
+        font-size: 8vh;
+        margin: 0 1vh 0 0;
+    }
+}
+
+/* WEBKIT */
+
+body,
+body::selection {  
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
