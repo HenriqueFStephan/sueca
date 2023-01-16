@@ -134,7 +134,7 @@ class Card {
                 body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateK" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case 'joker':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p></div><div id="templateJoker" class="template"></div><div id="outerLetterEnd"><p>${value}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"></div><div id="templateJoker" class="template"></div><div id="outerLetterEnd"></div></div>`
                 break;
         }
     }
