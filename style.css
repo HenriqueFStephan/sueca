@@ -297,24 +297,21 @@ footer button {
 }
 
 #outerLetter {
-    display: inline;
+    display: column;
     font-size: 6vh;
     font-weight: 400;
-    margin-left: 2vh;
+    margin-left: 0;
     margin-top: 1vh;
     width: 9vh;
 }
 
-#nipe {
-    display: inline;
-    font-size: 6vh;
-}
+
 
 #outerLetterEnd {
-    display: inline;
+    display: column;
     font-size: 6vh;
     font-weight: 400;
-    margin-right: 2vh;
+    margin-right: 0;
     margin-bottom: 1vh;
     rotate: 180deg;
     width: 9vh;
@@ -322,15 +319,37 @@ footer button {
 
 /*  MEDIA KIT  */
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:580px) {
     #outerLetter {
         font-size: 8vh;
-        margin: 0 0 0 1vh;
+        width: 10vh;
+    }
+
+    #outerLetter :nth-child(1) {
+        margin-left: 2vh;
     }
     
     #outerLetterEnd {
         font-size: 8vh;
-        margin: 0 1vh 0 0;
+        width: 10vh;
+    }
+
+    #outerLetterEnd :nth-child(1) {
+        margin-left: 2vh;
+    }
+
+    #outerTemplate {
+        width: 43vh;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    #outerLetter {
+        margin-left: 2vh;
+    }
+    
+    #outerLetterEnd {
+        margin-right: 2vh;
     }
 }
 
