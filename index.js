@@ -45,9 +45,11 @@ class Deck {
                         if (this.deck[i].includes(card.nipe)) {
                             this.deck.splice(i, 1)
                             card.displayCard(card.valor, card.nipe);
+                            exibiRegra(card.valor);
                         }else if (card.valor == 'joker') {
                             this.deck.splice(i, 1)
                             card.displayCard(card.valor, card.nipe);
+                            exibiRegra(card.valor);
                         }
                     }
                 }
@@ -95,43 +97,43 @@ class Card {
         let body = document.getElementById(`${local}`);
         switch (value) {
             case 'a':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '2':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '3':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '4':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '5':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '6':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '7':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '8':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div><div class="l">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div><div class="l">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '9':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case '10':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case 'j':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateJ" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateJ" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case 'q':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateQ" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateQ" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case 'k':
-                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateK" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p id="pValue">${value}</p><p id="nipe">${nipe}</p></div><div id="templateK" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
                 break;
             case 'joker':
                 body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"></div><div id="templateJoker" class="template"></div><div id="outerLetterEnd"></div></div>`
@@ -155,4 +157,49 @@ buttom.addEventListener('click', function() {
     if (buttom.innerHTML == 'Shuffle') {
         deck.resetDeck();
     }
-})
+});
+
+
+
+const regras = {'a': '1 shot',
+                '2': '2 shots',
+                '3': '3 shots',
+                '4': 'Verdade, Desafio ou Shot',
+                '5': 'Eu fui para a lua e levei...',
+                '6': 'Coloca regra',
+                '7': 'Continência',
+                '8': 'Espelho',
+                '9': 'Tirar regra',
+                '10': 'Jogo do pi',
+                'j': 'Homens bebem',
+                'q': 'Mulheres bebem',
+                'k': 'Não-Binários bebem',
+                'joker': 'SE FUDEU, beba 2 shots'}
+
+const regrasLongas = {'a': 'O jogador que tirou a carta escolhe 1 pessoa para dar um shot',
+                      '2': 'O jogador que tirou a carta distribui 2 shots entre os participantes',
+                      '3': 'O jogador que tirou a carta distribui 3 shots entre os participantes',
+                      '4': 'Jogue uma rodade de verdade ou desafio, caso não queira jogar, beba 1 shot',
+                      '5': 'Jogue uma rodade de fui a lua e levei... O perdedor bebe',
+                      '6': 'O jogador escolhe uma regra, qualquer pessoa que quebrar a regra bebe',
+                      '7': 'O jogador que tirou a carta pode bater continência a qualquer momento, o último a o imitar bebe',
+                      '8': 'Coloque um espelho em um jogador x e um jogador y, toda vez q x beber, y bebe',
+                      '9': 'O jogador escolhe uma regra em vigor, esta regra não é mais válida',
+                      '10': 'Jogue uma rodada do "Jogo do pi", o perdedor bebe',
+                      'j': 'Todos os homens bebem',
+                      'q': 'Todas as mulheres bebem',
+                      'k': 'todos os não-binários bebem',
+                      'joker': 'Já ta explicado'}
+
+function exibiRegra(value) {
+    let regra = document.createElement('p');
+    regra.setAttribute('class', 'regra');
+    regra.innerHTML = `${regras[value]}`;
+    let local = document.getElementById('main');
+    local.appendChild(regra);
+    let n = 1
+    regra.addEventListener('click', function() {
+        regra.innerHTML = `${regrasLongas[value]}`;
+    })
+}
+

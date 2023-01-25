@@ -360,3 +360,18 @@ body::selection {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
+
+#nipe, #pValue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regra {
+    position: absolute;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 50vh;
+}
