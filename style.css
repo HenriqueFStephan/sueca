@@ -33,6 +33,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -53,269 +54,20 @@ header h1 {
 main {
     align-items: center;
     display: flex;
-    height: 60vh;
+    height: 80vh;
     justify-content: center;
     text-transform: uppercase;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
-footer {
-    align-items: flex-start;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-}
-
-footer button {    
-    background: #2c1010d7;
-    border: none;
-    border-radius: 8px;
-    color: #f1e3be;
-    cursor: pointer;  
-    font-size: 5vh;
-    font-weight: 600;
-    margin-top: 5vh;
-    padding: 0.5vh 1vh 0.5vh 1vh
-}
-
-/*  CARDS  */
-
-#template105 {
-    background-color: #fbf6cc;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    display: grid;                       
-    font-size: 50px;
-    grid-template-areas:"a i b"
-                        "c i d"
-                        "e j f"
-                        "g j h";
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;
-}
-
-#templateA5329 {
-    background-color: #fbf6cc;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    display: grid;
-    font-size: 50px;
-    grid-template-areas:"a i b"
-                        "a i b"
-                        "a i b"
-                        "c i d"
-                        "c k d"
-                        "c k d"
-                        "e k f"
-                        "e k f"
-                        "e j f"
-                        "g j h"
-                        "g j h"
-                        "g j h";
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;
-}
-
-#template4678 {
-    background-color: #fbf6cc;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    display: grid;
-    font-size: 50px;
-    grid-template-areas:"a i b"
-                        "a i b"
-                        "a i b"
-                        "a k b"
-                        "c k d"
-                        "c k d"
-                        "c l d"
-                        "c l d"
-                        "e l f"
-                        "e j f"
-                        "e j f"
-                        "e j f";
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;
-}
-
-#templateJ {
-    background-color: #fbf6cc;
-    background-image: url(./cartas/Jack.jpg);
-    background-position: center;
-    background-size: 105%;
-    background-repeat: no-repeat;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    font-size: 50px;
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;    
-}
-
-#templateQ {
-    background-color: #fbf6cc;
-    background-image: url(./cartas/Queen.jpg);
-    background-position: center;
-    background-size: 110%;
-    background-repeat: no-repeat;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    font-size: 50px;
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;
-}
-
-#templateK {
-    background-color: #fbf6cc;
-    background-image: url(./cartas/King.jpg);
-    background-position: center;
-    background-size: 108%;
-    background-repeat: no-repeat;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    font-size: 50px;
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;
-}
-
-#templateJoker {
-    background-color: #fbf6cc;
-    background-image: url(./cartas/joker.jpg);
-    background-position: center;
-    background-size: 98%;
-    background-repeat: no-repeat;
-    border: double 10px #cbc48c;
-    border-radius: 10px;
-    font-size: 50px;
-    height: 40vh;
-    margin-top: 10.7vh;
-    width: 25vh;
-}
-
-.a {
-    align-items: center;
-    display: flex;
-    grid-area: a;
-    justify-content: center;    
-}
-
-.b {
-    align-items: center;
-    display: flex;
-    grid-area: b;
-    justify-content: center;    
-}
-
-.c {
-    align-items: center;
-    display: flex;
-    grid-area: c;
-    justify-content: center;
-}
-
-.d {
-    align-items: center;
-    display: flex;
-    grid-area: d;
-    justify-content: center;
-}
-
-.e {
-    align-items: center;
-    display: flex;
-    grid-area: e;
-    justify-content: center;
-    rotate: 180deg;
-}
-
-.f {
-    align-items: center;
-    display: flex;
-    grid-area: f;
-    justify-content: center;
-    rotate: 180deg;
-}
-
-.g {
-    align-items: center;
-    display: flex;
-    grid-area: g;
-    justify-content: center;
-    rotate: 180deg;
-}
-
-.h {
-    align-items: center;
-    display: flex;
-    grid-area: h;
-    justify-content: center;
-    rotate: 180deg;
-}
-
-.i {
-    align-items: center;
-    display: flex;
-    grid-area: i;
-    justify-content: center;
-}
-
-.j {
-    align-items: center;
-    display: flex;
-    grid-area: j;
-    justify-content: center;
-    rotate: 180deg;
-}
-
-.k {
-    align-items: center;
-    display: flex;
-    grid-area: k;
-    justify-content: center;
-}
-
-.l {
-    align-items: center;
-    display: flex;
-    grid-area: l;
-    justify-content: center;
-    rotate: 180deg;
-}
-
-#outerTemplate {
-    background-color: #f1efe3;
-    border: solid #000 5px;
-    border-radius: 20px;
-    display: flex;
-    font-size: 45px;
-    height: 64vh;
-    width: 41vh;
-}
-
-#outerLetter {
-    display: column;
-    font-size: 6vh;
-    font-weight: 400;
-    margin-left: 0;
-    margin-top: 1vh;
-    width: 9vh;
+#cardSlot {
+    position: absolute;
+    height: 25vh;
+    width: 15vh;
 }
 
 
-
-#outerLetterEnd {
-    display: column;
-    font-size: 6vh;
-    font-weight: 400;
-    margin-right: 0;
-    margin-bottom: 1vh;
-    rotate: 180deg;
-    width: 9vh;
-}
 
 /*  MEDIA KIT  */
 
@@ -372,6 +124,7 @@ body::selection {
     font-size: large;
     font-weight: 900;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     max-width: 50vh;
+    text-align: center;
 }
