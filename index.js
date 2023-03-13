@@ -170,6 +170,9 @@ document.addEventListener("click", handleClick);
 let deck = new Deck
 deck.placeDeck('cardSlot', '20vh', true, true)
 
+let x = 0
+console.log(x);
+
 
 
 
