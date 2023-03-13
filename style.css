@@ -7,103 +7,22 @@
 /*  CSSZIN  */
 
 body {
-    background-color: #91dfe8a7;
-    background-image: url(./assets/mac.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
     overflow: hidden;
 }
 
 header {
-    align-items: center;
-    color: #f1e3be;
     display: flex;
-    font-size: 9vh;
-    height: 20vh;
     justify-content: center;
 }
 
 header h1 {
-    background: #2c1010d7;
-    border-radius: 8px;
-    padding: 0 2vh 0 2vh;
+    font-size: 4rem;
 }
 
 main {
-    align-items: center;
+    align-items: flex-end;
     display: flex;
-    height: 80vh;
+    height: 70vh;
     justify-content: center;
     text-transform: uppercase;
-    align-items: flex-end;
-    overflow: hidden;
-}
-
-#cardSlot {
-    position: absolute;
-    height: 25vh;
-    width: 15vh;
-}
-
-
-
-/*  MEDIA KIT  */
-
-@media only screen and (max-width:580px) {
-    #outerLetter {
-        font-size: 8vh;
-        width: 10vh;
-    }
-
-    #outerLetter :nth-child(1) {
-        margin-left: 2vh;
-    }
-    
-    #outerLetterEnd {
-        font-size: 8vh;
-        width: 10vh;
-    }
-
-    #outerLetterEnd :nth-child(1) {
-        margin-left: 2vh;
-    }
-
-    #outerTemplate {
-        width: 43vh;
-    }
-}
-
-@media only screen and (min-width:600px) {
-    #outerLetter {
-        margin-left: 2vh;
-    }
-    
-    #outerLetterEnd {
-        margin-right: 2vh;
-    }
-}
-
-/* WEBKIT */
-
-body,
-body::selection {  
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
-#nipe, #pValue{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.regra {
-    position: absolute;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.6);
-    max-width: 50vh;
-    text-align: center;
 }
