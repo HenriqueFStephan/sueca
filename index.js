@@ -7,7 +7,7 @@ class Deck {
         ['A', '♡'], ['2', '♡'], ['3', '♡'], ['4', '♡'], ['5', '♡'], ['6', '♡'], ['7', '♡'], ['8', '♡'], ['9', '♡'], ['10', '♡'], ['J', '♡'], ['Q', '♡'], ['K', '♡'],
         ['A', '♢'], ['2', '♢'], ['3', '♢'], ['4', '♢'], ['5', '♢'], ['6', '♢'], ['7', '♢'], ['8', '♢'], ['9', '♢'], ['10', '♢'], ['J', '♢'], ['Q', '♢'], ['K', '♢'],
         ['A', '♧'], ['2', '♧'], ['3', '♧'], ['4', '♧'], ['5', '♧'], ['6', '♧'], ['7', '♧'], ['8', '♧'], ['9', '♧'], ['10', '♧'], ['J', '♧'], ['Q', '♧'], ['K', '♧'],
-        ['Joker', 'A'], ['Joker', 'B']];
+        ['Joker', ' '], ['Joker', '']];
         this.usedCards = [];
     }
 
@@ -16,7 +16,7 @@ class Deck {
         ['A', '♡'], ['2', '♡'], ['3', '♡'], ['4', '♡'], ['5', '♡'], ['6', '♡'], ['7', '♡'], ['8', '♡'], ['9', '♡'], ['10', '♡'], ['J', '♡'], ['Q', '♡'], ['K', '♡'],
         ['A', '♢'], ['2', '♢'], ['3', '♢'], ['4', '♢'], ['5', '♢'], ['6', '♢'], ['7', '♢'], ['8', '♢'], ['9', '♢'], ['10', '♢'], ['J', '♢'], ['Q', '♢'], ['K', '♢'],
         ['A', '♧'], ['2', '♧'], ['3', '♧'], ['4', '♧'], ['5', '♧'], ['6', '♧'], ['7', '♧'], ['8', '♧'], ['9', '♧'], ['10', '♧'], ['J', '♧'], ['Q', '♧'], ['K', '♧'],
-        ['Joker', 'A'], ['Joker', 'B']];
+        ['Joker', ' '], ['Joker', '']];
         this.usedCards = [];
     }
 
@@ -42,7 +42,6 @@ class Deck {
                 let card = new Carta(shuffledDeck[i][1], shuffledDeck[i][0], i, downSideUp);
                 card.displayCard(local, height, true);
                 card.moveRotateCardPreset(`calc(0.2*${entrie}px)`, `calc(-0.2*${entrie}px)`, 0, 5, 0, 0, 1, '1s')
-                console.log(entrie);
                 entrie += 1
             }
         }
@@ -147,7 +146,6 @@ function handleClick(event) {
     var clickedElement = event.target.closest('.displayedCard');
     var previousCard = clickedElement.nextSibling;
     let value = clickedElement.firstChild.firstChild.innerHTML
-    console.log(clickedElement);
     clickedElement.style.transition = '1s all'
     if (!previousCard){
         clickedElement.style.transform = `translateY(-200px) rotateY(180deg) scale(2)`
@@ -158,7 +156,6 @@ function handleClick(event) {
         previousCard.style.transform = `translateY(-200px) translateX(800px) rotateY(180deg) scale(2)`
     }
     exibiRegra(value)
-
 }
 
 // Add the click event listeners to the document
