@@ -19,32 +19,62 @@ class Deck {
         ['Joker', ''], ['Joker', '']];
         this.usedCards = [];
     }
+
+    // placeDeck(local, height, random, downSideUp, entrie=0) {
+    //     if (!random){
+    //         for (let i = 0; i < 54; i++) {
+    //             let card = new Carta(this.deck[i][1], this.deck[i][0], i, downSideUp);
+    //             card.displayCard(local, height, true);
+    //             card.moveRotateCardPreset(`calc(${i}px/10)`, `calc(-${i}px/5)`, 0, 15, 0, 0, 1, 0);
+    //             entrie += 1
+    //         }
+    //     }else {
+    //         for (let index in this.deck) {
+    //             let card = new Carta
+    //             console.log(card.randomCard())
+    //             if (this.deck[index].includes(card.value)) {
+    //                 if (this.deck[index].includes(card.nipe)) {
+    //                     this.deck.splice(index, 1)
+    //                     card.displayCard(local, height, true, downSideUp=true);
+    //                     card.moveRotateCardPreset(`calc(0.2*${entrie}px)`, `calc(-0.2*${entrie}px)`, 0, 5, 0, 0, 1, '1s')
+    //                     entrie += 1
+    //                     console.log(card);
+    //                 }
+    //             }
+    //             else {
+    //                 this.placeDeck(local, height, true, downSideUp, entrie)
+    //             }  
+    //         }    
+    //     }
+    // }
+
     placeDeck(local, height, random, downSideUp, entrie=0) {
-        if (!random){
+        if (!random) {
+            // If random is false, just display the cards in order
             for (let i = 0; i < 54; i++) {
                 let card = new Carta(this.deck[i][1], this.deck[i][0], i, downSideUp);
                 card.displayCard(local, height, true);
                 card.moveRotateCardPreset(`calc(${i}px/10)`, `calc(-${i}px/5)`, 0, 15, 0, 0, 1, 0);
                 entrie += 1
             }
-        }else {
-            for (let index in this.deck) {
-                let card = new Carta
-                card.randomCard()
-                if (this.deck[index].includes(card.value)) {
-                    if (this.deck[index].includes(card.nipe)) {
-                        this.deck.splice(index, 1)
-                        card.displayCard(local, height, true, downSideUp=true);
-                        card.moveRotateCardPreset(`calc(0.2*${entrie}px)`, `calc(-0.2*${entrie}px)`, 0, 5, 0, 0, 1, '1s')
-                        entrie += 1
-                    }
-                }
-                else {
-                    this.placeDeck(local, height, true, downSideUp, entrie)
-                }  
-            }    
+        } else {
+            // If random is true, shuffle the deck using the Fisher-Yates algorithm
+            let shuffledDeck = [...this.deck];
+            for (let i = shuffledDeck.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledDeck[i], shuffledDeck[j]] = [shuffledDeck[j], shuffledDeck[i]];
+            }
+    
+            // Display the shuffled cards
+            for (let i = 0; i < 54; i++) {
+                let card = new Carta(shuffledDeck[i][1], shuffledDeck[i][0], i, downSideUp);
+                card.displayCard(local, height, true);
+                card.moveRotateCardPreset(`calc(0.2*${entrie}px)`, `calc(-0.2*${entrie}px)`, 0, 5, 0, 0, 1, '1s')
+                entrie += 1
+            }
         }
     }
+    
 
     
     draw() {
@@ -95,11 +125,6 @@ class Deck {
             };
         };
 }
-
-function choose(choices) {
-    var index = Math.floor(Math.random() * choices.length);
-    return choices[index];
-  }
 
 const regras = {'A': '1 shot',
                 '2': '2 shots',
