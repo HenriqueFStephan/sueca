@@ -113,7 +113,7 @@ const regras = {'A': '1 shot',
                 'K': 'Não-Binários bebem',
                 'Joker': 'SE FUDEU, beba 2 shots'}
 
-const regrasLongas = {'a': 'O jogador que tirou a carta escolhe 1 pessoa para dar um shot',
+const regrasLongas = {'A': 'O jogador que tirou a carta escolhe 1 pessoa para dar um shot',
                       '2': 'O jogador que tirou a carta distribui 2 shots entre os participantes',
                       '3': 'O jogador que tirou a carta distribui 3 shots entre os participantes',
                       '4': 'Jogue uma rodade de verdade ou desafio, caso não queira jogar, beba 1 shot',
@@ -123,10 +123,10 @@ const regrasLongas = {'a': 'O jogador que tirou a carta escolhe 1 pessoa para da
                       '8': 'Coloque um espelho em um jogador x e um jogador y, toda vez q x beber, y bebe',
                       '9': 'O jogador escolhe uma regra em vigor, esta regra não é mais válida',
                       '10': 'Jogue uma rodada do "Jogo do pi", o perdedor bebe',
-                      'j': 'Todos os homens bebem',
-                      'q': 'Todas as mulheres bebem',
-                      'k': 'Todos os não-binários bebem',
-                      'joker': 'Já ta explicado'}
+                      'J': 'Todos os homens bebem',
+                      'Q': 'Todas as mulheres bebem',
+                      'K': 'Todos os não-binários bebem',
+                      'Joker': 'Já ta explicado'}
 
                       
 let regra = document.createElement('p');
@@ -148,12 +148,12 @@ function handleClick(event) {
     let value = clickedElement.firstChild.firstChild.innerHTML
     clickedElement.style.transition = '1s all'
     if (!previousCard){
-        clickedElement.style.transform = `translateY(-200px) rotateY(180deg) scale(2)`
+        clickedElement.style.transform = `translateY(-40lvh) rotateY(180deg) scale(2)`
     }
     else {
         previousCard.style.transition = '1s all'
-        clickedElement.style.transform = `translateY(-200px) rotateY(180deg) scale(2)`
-        previousCard.style.transform = `translateY(-200px) translateX(800px) rotateY(180deg) scale(2)`
+        clickedElement.style.transform = `translateY(-40lvh) rotateY(180deg) scale(2)`
+        previousCard.style.transform = `translateY(-40lvh) translateX(800px) rotateY(360deg) scale(1)`
     }
     exibiRegra(value)
 }

@@ -7,8 +7,7 @@
 /*  CSSZIN  */
 
 body {
-    background-color: #91dfe8a7;
-    background-image: url(./assets/mac.png);
+    background-color: #000000a7;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -17,7 +16,7 @@ body {
 
 header {
     align-items: center;
-    color: #f1e3be;
+    color: #b7b3a9;
     display: flex;
     font-size: 9vh;
     height: 20vh;
@@ -25,7 +24,7 @@ header {
 }
 
 header h1 {
-    background: #2c1010d7;
+    background: #353535d7;
     border-radius: 8px;
     padding: 0 2vh 0 2vh;
 }
@@ -44,6 +43,8 @@ main {
     position: absolute;
     height: 25vh;
     width: 15vh;
+    top: 79lvh;
+
 }
 
 
@@ -100,10 +101,11 @@ body::selection {
 
 .regra {
     position: absolute;
-    font-size: large;
+    font-size: 2.4rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.6);
     max-width: 50vh;
     text-align: center;
+    top: 70lvh;
 }

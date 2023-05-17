@@ -66,7 +66,6 @@
                                     justify-content: space-around;
                                     align-items: center;
                                     font-size: calc(${height}/7.5);
-                                    box-shadow: calc(${height}/100) calc(${height}/200) calc(${height}/20) calc(${height}/80) #888888;
                                     position: absolute;
                                     backface-visibility: hidden;`)
         const valueUp = document.createElement('p')
