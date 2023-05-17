@@ -165,7 +165,6 @@ document.addEventListener("click", handleClick);
 let deck = new Deck
 deck.placeDeck('cardSlot', '20vh', true, true);
 
-console.log('hey pretty');
 
 
 
